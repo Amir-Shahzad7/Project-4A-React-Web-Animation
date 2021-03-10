@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+body {
+  background-color: #48dae9;
+  margin: 0;
+  width: 100%;
+  position: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Sun {
+  position: absolute;
+  width: 100px;
+  display: block;
+  top: 10%;
+  left: 15%;
+  animation: rotation 50s infinite linear;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes rotation {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.Clouds {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Cloud1 {
+  width: 150px;
+  padding-top: 50%;
+}
+
+.Cloud2 {
+  width: 180px;
+}
+
+.Cloud3 {
+  width: 120px;
+  padding-top: 30%;
+}
+
+.Cloud4 {
+  width: 140px;
+}
+
+.Birds {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Bird1 {
+  width: 100px;
+}
+
+.Bird2 {
+  width: 150px;
+}
+
+.Bird3 {
+  width: 80px;
+}
+
+.Ship {
+  position: absolute;
+  display: block;
+  left: 25%;
+}
+
+.Trees {
+  display: flex;
+  justify-content: unset;
+}
+
+.Tree1 {
+  position: absolute;
+  width: 100px;
+  display: block;
+  padding-top: 70px;
+}
+
+.Tree2 {
+  position: absolute;
+  width: 100px;
+  display: block;
+  padding-top: 100px;
+  right: 30%;
+}
+
+.Tree3 {
+  position: absolute;
+  display: block;
+  width: 100px;
+  padding-top: 65px;
+  right: 1px;
+}
+
+.Runner {
+  position: absolute;
+  display: block;
+  width: 200px;
+  padding-top: 130px;
+  left: 40%;
+  cursor: pointer;
+}
+
+.Runway {
+  padding-top: 80px;
+}
+
+.Sea {
+  height: 60px;
+  background: rgb(95, 144, 235);
+}
+
+.Beach {
+  height: 100px;
+  background: #f6ef9f;
+}
+
+.Road1 {
+  background: lightslategray;
+  height: 60px;
+  width: 100%;
+}
+
+.Road2 {
+  background: rgb(255, 255, 255);
+  height: 10px;
+  width: 100%;
+}
+
+.Road3 {
+  background: lightslategray;
+  height: 60px;
+  width: 100%;
 }
