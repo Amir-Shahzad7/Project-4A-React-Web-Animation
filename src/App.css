@@ -1,3 +1,5 @@
+* { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
 body {
   background-color: #48dae9;
   margin: 0;
